@@ -34,9 +34,12 @@ For the "BEFORE" metrics, all resources were originally deployed, exposed to the
 For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
 
 ## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
+<img width="964" alt="BEFOREFAILEDmssql" src="https://github.com/user-attachments/assets/62933ae7-a166-4812-b1e6-0c695d510f04">
+<img width="955" alt="BEFOREFAILEDLINUX" src="https://github.com/user-attachments/assets/f8a9203d-1d75-4b50-a8a5-3fb819f5176e">
+<img width="957" alt="BEFOREnsgALLOWEDIN" src="https://github.com/user-attachments/assets/14198634-0330-49ca-b682-5ba0e1d58234">
+<img width="950" alt="BEFOREWINDOWSFAIL" src="https://github.com/user-attachments/assets/d600d4d0-ef9d-4286-ba5d-9400b3bbe108">
+
+
 
 ## Metrics Before Hardening / Security Controls
 
@@ -52,9 +55,13 @@ Stop Time 2024-10-09 7:56:18
 | SecurityIncident         | 254
 | AzureNetworkAnalytics_CL | 2138
 
-## Attack Maps Before Hardening / Security Controls
+## Attack Maps After Hardening / Security Controls
+<img width="919" alt="AFTERMSSQLFAIL" src="https://github.com/user-attachments/assets/902f5ed1-684d-4082-ba85-43e97b860f38">
+<img width="942" alt="AFTERLINUXFAIL" src="https://github.com/user-attachments/assets/2c44b841-ad58-4f11-99bf-2d4baa27123b">
+<img width="933" alt="AFTERNSGALLOWED" src="https://github.com/user-attachments/assets/22a4d4f3-01a1-4f2b-8196-5dc4321431a6">
+<img width="917" alt="AFTERWINDOWFAIL" src="https://github.com/user-attachments/assets/72ea697e-6595-4ff8-b52f-d46f810b57c9">
 
-```All map queries actually returned no results due to no instances of malicious activity for the 24 hour period after hardening.```
+
 
 ## Metrics After Hardening / Security Controls
 
