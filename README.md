@@ -3,13 +3,19 @@
 
 ## Introduction
 
-In this project, I build a mini honeynet in Azure and ingest log sources from various resources into a Log Analytics workspace, which is then used by Microsoft Sentinel to build attack maps, trigger alerts, and create incidents. I measured some security metrics in the insecure environment for 24 hours, apply some security controls to harden the environment, measure metrics for another 24 hours, then show the results below. The metrics we will show are:
+Welcome to the **Azure Sentinel Honeypot Homelab walkthrough**! In this guide, we’ll explore how to set up a honeypot in **Microsoft Azure Sentinel**, combining the practical learning experience of a homelab with powerful threat detection tools. Honeypots are decoy systems designed to attract malicious activity, offering valuable insights into attacker behavior and tactics.
 
-- SecurityEvent (Windows Event Logs)
-- Syslog (Linux Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+This project involves building a mini honeynet in Azure and leveraging **Microsoft Sentinel**, a cloud-native **SIEM (Security Information and Event Management)** solution, to collect and analyze log data from various sources. Using **Log Analytics**, we track and log attacks in real time, creating an interactive attack map and triggering alerts based on actual threats.
+
+Over two 24-hour periods, I measured key security metrics in both an insecure and hardened environment, showing the impact of applying security controls. The metrics we’ll review include:
+
+- **SecurityEvent** (Windows Event Logs)
+- **Syslog** (Linux Event Logs)
+- **SecurityAlert** (Log Analytics Alerts Triggered)
+- **SecurityIncident** (Incidents created by Sentinel)
+- **AzureNetworkAnalytics_CL** (Malicious Flows detected in the honeynet)
+
+Let’s dive into this thrilling intersection of cybersecurity and innovation, as we uncover the insights and skills gained from building and analyzing this Azure Sentinel honeypot.
 
 ## Architecture Before Hardening / Security Controls
 ![image](https://github.com/user-attachments/assets/10f3ae34-aacd-4ee8-a214-219a0b9d6fb1)
